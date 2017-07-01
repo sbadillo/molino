@@ -6,11 +6,16 @@ AUTHOR = u'SM'
 SITENAME = u'Sylvia Moulin'
 SITEURL = ''
 
+SITEURL = ''  # empty, see publishconf.py for publishing config
+print('==== Empieza Pelican! : ' + SITENAME + ' '+ SITEURL +'  ====')
+
 PATH = 'content'
 
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'fr'
+
+THEME = './themes/simple-molinos'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -32,4 +37,4 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
