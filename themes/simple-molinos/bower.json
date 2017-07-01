@@ -1,0 +1,25 @@
+{
+  "name": "simple-molinos",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "sb"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/sbadillo/molinos",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jcarousel": "^0.3.5",
+    "jcarouselLazyLoading": "jcarousel-lazyLoading#^0.1.0",
+    "jcarouselSwipe": "jcarousel-swipe#^0.3.4",
+    "magnific-popup": "^1.1.0",
+    "bootstrap": "4"
+  },
+  "devDependencies": {}
+}

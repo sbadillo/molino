@@ -1,0 +1,28 @@
+{
+  "name": "jcarouselLazyLoading",
+  "version": "0.1.0",
+  "authors": [
+    "Evgeniy Pelmenev <g.snake345@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "jcarousel",
+    "lazy",
+    "loading",
+    "wait",
+    "image"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">=1.7",
+    "jcarousel": ">=0.3.4",
+    "jcarousel-swipe": ">=0.1.1",
+    "imagesloaded": "*"
+  }
+}

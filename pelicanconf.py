@@ -11,6 +11,9 @@ print('==== Empieza Pelican! : ' + SITENAME + ' '+ SITEURL +'  ====')
 
 PATH = 'content'
 
+STATIC_PATHS = ['images','extra','pages/images'] # paths copied identically from content folder.
+
+
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'fr'

@@ -1,0 +1,38 @@
+{
+  "name": "jcarouselLazyLoading",
+  "version": "0.1.0",
+  "authors": [
+    "Evgeniy Pelmenev <g.snake345@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "jcarousel",
+    "lazy",
+    "loading",
+    "wait",
+    "image"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">=1.7",
+    "jcarousel": ">=0.3.4",
+    "jcarousel-swipe": ">=0.1.1",
+    "imagesloaded": "*"
+  },
+  "homepage": "https://github.com/snake-345/jcarouselLazyLoading",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "858cca4197fb50c520b1966ab5478afd201fb7f6"
+  },
+  "_source": "https://github.com/snake-345/jcarouselLazyLoading.git",
+  "_target": "^0.1.0",
+  "_originalSource": "jcarousel-lazyLoading"
+}
