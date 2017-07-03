@@ -107,8 +107,15 @@ body,
 
  .flex-row {
   flex:1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -o-flex: 1;
+  
   border: $debug;
 }
+
+
+
 
 .index-thumb {
   background-repeat: no-repeat;
