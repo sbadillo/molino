@@ -45,6 +45,9 @@
  */
 .flex-row {
   flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -o-flex: 1;
   border: 1px dashed green; }
 
 .index-thumb {
