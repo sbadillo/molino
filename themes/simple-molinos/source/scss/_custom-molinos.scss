@@ -119,11 +119,12 @@ body,
   -o-background-size: cover;
 
 
-  height:100%;
+ height:100%;
+ min-height:100%;
 }
 
 .tall {
-  height:95vh;
+  height:90vh;
 }
 
 @include media-breakpoint-down(sm) {.tall  { height:35vh; }}
