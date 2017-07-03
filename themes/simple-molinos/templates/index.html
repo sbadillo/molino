@@ -1,77 +1,77 @@
 {% extends "base.html" %}
 {% block content %}
+
 <section id="content">
 
-  {# <div class="container-fluid index-card-container border-blue">
-    <div class="card-columns">
+{# 
+    <div class="flex-container">
+      <div class="flex-columns lazy" data-background="{{ SITEURL }}/images/architecture.jpg">foo</div>
+      <div class="flex-columns lazy" data-background="{{ SITEURL }}/images/decouverte.jpg">foo</div>
+      <div class="flex-columns flex-triplets">  
+        <div class="flex-rows row-1 lazy" data-background="{{ SITEURL }}/images/danse.jpg">bar</div>
+        <div class="flex-rows row-2 lazy" data-background="{{ SITEURL }}/images/identitevisuelle.jpg">bar</div>
+        <div class="flex-rows row-3 lazy" data-background="{{ SITEURL }}/images/collage.jpg">bar</div>
+      </div>
+    </div> <!-- /flex-container-->
 
-      <div class="card">
-        <img class="card-img-top img-fluid" src="{{ SITEURL }}/images/decouverte.jpg" alt="">
+    #}
+
+    <div class="row main-row no-gutters full-height">
+
+      {# 1 #}
+      <div class="col-md-4 pr-2">
+        <a href="#">
+          <div class="index-thumb full-height lazy" data-background="{{ SITEURL }}/images/architecture.jpg"></div>
+        </a>
       </div>
 
-      <div class="card">
-        <img class="card-img-top img-fluid" src="{{ SITEURL }}/images/architecture.jpg" alt="">
+      
+      {# 2 #}
+      <div class="col-md-4 pr-2">
+        <a href="#">
+          <div class="index-thumb full-height lazy" data-background="{{ SITEURL }}/images/decouverte.jpg"></div>
+        </a>
       </div>
       
-      <div class="card">
-        <img class="card-img-top img-fluid" src="{{ SITEURL }}/images/collage.jpg" alt="">
-      </div>
-      
-      <div class="card">
-        <img class="card-img-top img-fluid" src="{{ SITEURL }}/images/danse.jpg" alt="">
-      </div>
-      
-      <div class="card">
-      <img class="card-img-top img-fluid" src="{{ SITEURL }}/images/identitevisuelle.jpg" alt="">
-      </div>
-      
-    </div>
-  </div> #}
-
-
-
-  <div class="container-fluid index-container border-blue">
-
-    <div class="row">
-
+      {# 3 #}
       <div class="col-md-4">
-        <div class="card index-large lazy" data-background="{{ SITEURL }}/images/decouverte.jpg">
+        <div class="d-flex flex-md-column full-height">
+
+          {# 3.1 #}
+
+          <div class="flex-row pb-2">
+            <a href="#">
+              <div class="index-thumb full-height lazy" data-background="{{ SITEURL }}/images/danse.jpg"></div>
+            </a>
+          </div>
+
+          {# 3.2 #}
+
+          <div class="flex-row pb-2">
+            <a href="#">
+              <div class="index-thumb full-height lazy" data-background="{{ SITEURL }}/images/collage.jpg"></div>
+            </a>
+          </div>
+
+          {# 3.3 #}
+          
+          <div class="flex-row ">
+            <a href="#">
+              <div class="index-thumb full-height lazy" data-background="{{ SITEURL }}/images/identitevisuelle.jpg"></div>
+            </a>
+          </div>
+
+
         </div>
       </div>
 
-      <div class="col-md-4 index-large">
-        <div class="card index-large lazy" data-background="{{ SITEURL }}/images/architecture.jpg">
-        </div>
-      </div>
-
-      <div class="col-md-4 index-large">
-
-        <div class="row index-small">
-          <div class="card index-large lazy" data-background="{{ SITEURL }}/images/danse.jpg">
-          </div>
-        </div>
-
-        <div class="row index-small">
-          <div class="card index-large lazy" data-background="{{ SITEURL }}/images/architecture.jpg">
-          </div>
-        </div>
-
-        <div class="row index-small">
-          <div class="card index-large lazy" data-background="{{ SITEURL }}/images/identitevisuelle.jpg">
-          </div>
-        </div>
+    </div> <!-- /main-row -->
 
 
+    {% if articles_page.has_other_pages() %}
+    {% include 'pagination.html' %}
+    {% endif %}
 
-      </div>
+  </section><!-- /#content -->
 
-
-    </div>
-
-  </div>
-
-  {% if articles_page.has_other_pages() %}
-  {% include 'pagination.html' %}
-  {% endif %}
-</section><!-- /#content -->
-{% endblock content %}
+  {% endblock content %}

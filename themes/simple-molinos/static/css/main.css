@@ -8,6 +8,28 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+html,
+body {
+  height: 100%; }
+
+section {
+  height: 100%; }
+
+.home-container {
+  height: calc(100% - 2rem); }
+
+/*
+ * Main showcase
+ */
+.full-height {
+  height: 100%; }
+
+.flex-row {
+  flex: 1; }
+
+.index-thumb {
+  background-size: cover; }
+
 /*
  * Sidebar
  */
@@ -26,9 +48,6 @@
   padding-left: 0;
   padding-right: 0; }
 
-.sidebar .nav {
-  margin-bottom: 20px; }
-
 .sidebar .nav-item {
   width: 100%; }
 
@@ -39,29 +58,45 @@
   border-radius: 0; }
 
 .content-container {
-  padding-top: 2rem;
-  height: 100vh; }
+  height: 100%;
+  width: 100%;
+  padding: 2rem 0; }
 
-.index-cards-container {
-  padding: 0; }
+/*
+ *  Flexbox try
+ *
+ */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%; }
+  .flex-container .flex-triplets {
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
 
-.index-large {
-  height: 100%; }
+.flex-columns {
+  flex: 1;
+  background-size: cover;
+  margin-right: 0.5rem; }
 
-.border-green {
-  border: 1px solid green; }
+.flex-rows {
+  flex: 1;
+  background-size: cover;
+  border: black solid 2px; }
 
-.border-red {
-  border: 1px solid red; }
+.row-1 {
+  margin-bottom: 0.5rem; }
 
-.border-blue {
-  border: 1px solid blue; }
+.row-2 {
+  margin-bottom: 0.5rem; }
 
-.border-yellow {
-  border: 1px solid yellow; }
-
-.border-dashed {
-  border: 1px dashed gray; }
+/*
+ *  Footer
+ */
+footer {
+  height: 2rem; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
