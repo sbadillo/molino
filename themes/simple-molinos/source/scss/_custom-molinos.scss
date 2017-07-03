@@ -105,14 +105,20 @@ body,
  * Main showcase
  */
 
-.flex-row {
+ .flex-row {
   flex:1;
 }
 
 .index-thumb {
   background-repeat: no-repeat;
   background-position:center;
+  
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+
   height:100%;
 }
 
