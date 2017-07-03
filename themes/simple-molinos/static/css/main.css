@@ -8,27 +8,23 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-html,
-body {
-  height: 100%; }
-
-section {
-  height: 100%; }
-
-.home-container {
-  height: calc(100% - 2rem); }
-
 /*
  * Main showcase
  */
-.full-height {
-  height: 100%; }
-
 .flex-row {
   flex: 1; }
 
 .index-thumb {
-  background-size: cover; }
+  background-size: cover;
+  border: 1px solid black;
+  height: 100%; }
+
+.tall {
+  height: 80vh; }
+
+@media (max-width: 767px) {
+  .tall {
+    height: 40vh; } }
 
 /*
  * Sidebar
@@ -46,7 +42,9 @@ section {
 /* Sidebar navigation */
 .sidebar {
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  box-sizing: border-box;
+  border: 5px solid red; }
 
 .sidebar .nav-item {
   width: 100%; }
@@ -60,7 +58,7 @@ section {
 .content-container {
   height: 100%;
   width: 100%;
-  padding: 2rem 0; }
+  padding: 0; }
 
 /*
  *  Flexbox try

@@ -15,34 +15,25 @@
 
 <body id="index" class="home">
 
-    
+  <div class="row container-fluid home-container">
 
-    <div class="container-fluid home-container">
-  <div class="row no-gutters">
-
-      <!-- Load sidebar content -->
-      <div class="col-md-2">
-        <div class=" sidebar-container bg-warning">  
-          {% include "sidebar.html" %}
-        </div>
-
+    <!-- Load sidebar content -->
+    <div class="col-md-3">
+      <div class=" sidebar-container bg-warning">  
+        {% include "sidebar.html" %}
       </div>
-
-
-      <!-- Load Page content -->
-      <div class="col-md-10">
-        <div class="content-container bg-success">
-          {% block content %}
-          {% endblock %} 
-        </div>
-      </div> 
-
-
     </div>
 
+    <!-- Load Page content -->
+    <div class="col-md-9">
+      <div class="content-container bg-success">
+        {% block content %}
+        {% endblock %} 
+      </div>
+    </div> 
 
 
-  </div>  <!-- /home-container -->
+  </div>  <!-- /home-container row -->
   
   {# ===================== footer ======== #}
 

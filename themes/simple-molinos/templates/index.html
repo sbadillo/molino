@@ -3,75 +3,63 @@
 
 <section id="content">
 
-{# 
-    <div class="flex-container">
-      <div class="flex-columns lazy" data-background="{{ SITEURL }}/images/architecture.jpg">foo</div>
-      <div class="flex-columns lazy" data-background="{{ SITEURL }}/images/decouverte.jpg">foo</div>
-      <div class="flex-columns flex-triplets">  
-        <div class="flex-rows row-1 lazy" data-background="{{ SITEURL }}/images/danse.jpg">bar</div>
-        <div class="flex-rows row-2 lazy" data-background="{{ SITEURL }}/images/identitevisuelle.jpg">bar</div>
-        <div class="flex-rows row-3 lazy" data-background="{{ SITEURL }}/images/collage.jpg">bar</div>
-      </div>
-    </div> <!-- /flex-container-->
 
-    #}
+  <div class="row no-gutters">
 
-    <div class="row main-row no-gutters full-height">
-
-      {# 1 #}
-      <div class="col-md-4 pr-2">
-        <a href="#">
-          <div class="index-thumb full-height lazy" data-background="{{ SITEURL }}/images/architecture.jpg"></div>
-        </a>
-      </div>
-
-      
-      {# 2 #}
-      <div class="col-md-4 pr-2">
-        <a href="#">
-          <div class="index-thumb full-height lazy" data-background="{{ SITEURL }}/images/decouverte.jpg"></div>
-        </a>
-      </div>
-      
-      {# 3 #}
-      <div class="col-md-4">
-        <div class="d-flex flex-md-column full-height">
-
-          {# 3.1 #}
-
-          <div class="flex-row pb-2">
-            <a href="#">
-              <div class="index-thumb full-height lazy" data-background="{{ SITEURL }}/images/danse.jpg"></div>
-            </a>
-          </div>
-
-          {# 3.2 #}
-
-          <div class="flex-row pb-2">
-            <a href="#">
-              <div class="index-thumb full-height lazy" data-background="{{ SITEURL }}/images/collage.jpg"></div>
-            </a>
-          </div>
-
-          {# 3.3 #}
-          
-          <div class="flex-row ">
-            <a href="#">
-              <div class="index-thumb full-height lazy" data-background="{{ SITEURL }}/images/identitevisuelle.jpg"></div>
-            </a>
-          </div>
+    <!--1-->
+    <div class="col-md-4 p-1 tall">
+      <a href="#">
+        <div class="index-thumb lazy" data-background="{{ SITEURL }}/images/architecture.jpg"></div>
+      </a>
+    </div>
 
 
-        </div>
-      </div>
+    <!--2-->
+    {# 2 #}
+    <div class="col-md-4 p-1 tall">
+      <a href="#">
+        <div class="index-thumb lazy" data-background="{{ SITEURL }}/images/decouverte.jpg"></div>
+      </a>
+    </div>
 
-    </div> <!-- /main-row -->
+    <!--3-->
+    <div class="col-md-4 tall bg-info d-flex flex-md-column">
+
+     <!--3.1-->
+     <div class="flex-row p-1">
+      <a href="#">
+        <div class="index-thumb lazy" data-background="{{ SITEURL }}/images/danse.jpg"></div>
+      </a>
+    </div>
+
+    <!--3.2-->
+
+    <div class="flex-row p-1">
+      <a href="#">
+        <div class="index-thumb lazy" data-background="{{ SITEURL }}/images/collage.jpg"></div>
+      </a>
+    </div>
+
+    <!--3.3-->
+
+    <div class="flex-row p-1">
+      <a href="#">
+        <div class="index-thumb lazy" data-background="{{ SITEURL }}/images/identitevisuelle.jpg"></div>
+      </a>
+    </div>
 
 
-    {% if articles_page.has_other_pages() %}
-    {% include 'pagination.html' %}
-    {% endif %}
+  </div> 
 
-  </section><!-- /#content -->
+</div> <!-- /main-row -->
 
-  {% endblock content %}
+
+
+
+{% if articles_page.has_other_pages() %}
+{% include 'pagination.html' %}
+{% endif %}
+
+</section><!-- /#content -->
+
+{% endblock content %}
