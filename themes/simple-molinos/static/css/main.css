@@ -8,6 +8,38 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+.debug {
+  border: 1px dashed green; }
+
+.debug2 {
+  border: 1px dashed red; }
+
+.sidebar-container {
+  padding-top: 2rem; }
+  .sidebar-container .brand {
+    font-size: 2rem;
+    width: 100%; }
+  .sidebar-container .sidebar .nav-link {
+    font-size: 0.875rem; }
+  .sidebar-container .indent {
+    padding-left: 0.5rem; }
+  .sidebar-container .infobar {
+    padding-top: 0.33333rem;
+    font-size: 0.875rem; }
+
+.extra-container {
+  padding: 0;
+  padding-top: 2rem; }
+
+.content-container {
+  padding-top: 5rem;
+  height: 100%;
+  width: 100%; }
+
+@media (max-width: 767px) {
+  .content-container {
+    padding-top: 0; } }
+
 /*
  * Main showcase
  */
@@ -15,15 +47,21 @@
   flex: 1; }
 
 .index-thumb {
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   height: 100%; }
 
 .tall {
-  height: 80vh; }
+  height: 95vh; }
 
 @media (max-width: 767px) {
   .tall {
-    height: 40vh; } }
+    height: 35vh; } }
+
+@media (max-width: 767px) {
+  .small {
+    height: 20vh; } }
 
 /*
  * Sidebar
@@ -33,7 +71,7 @@
   bottom: 0;
   left: 0;
   z-index: 1000;
-  padding: 20px;
+  margin-bottom: 1rem;
   overflow-x: hidden;
   overflow-y: auto;
   /* Scrollable contents if viewport is shorter than content. */ }
@@ -51,41 +89,6 @@
 
 .sidebar .nav-link {
   border-radius: 0; }
-
-.content-container {
-  height: 100%;
-  width: 100%;
-  padding: 0; }
-
-/*
- *  Flexbox try
- *
- */
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  width: 100%; }
-  .flex-container .flex-triplets {
-    display: flex;
-    flex-direction: column;
-    height: 100%; }
-
-.flex-columns {
-  flex: 1;
-  background-size: cover;
-  margin-right: 0.5rem; }
-
-.flex-rows {
-  flex: 1;
-  background-size: cover;
-  border: black solid 2px; }
-
-.row-1 {
-  margin-bottom: 0.5rem; }
-
-.row-2 {
-  margin-bottom: 0.5rem; }
 
 /*
  *  Footer
@@ -357,7 +360,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Vollkorn", Georgia, serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -2654,7 +2657,7 @@ tbody.collapse.show {
 
 .nav-link {
   display: block;
-  padding: 0.5em 1em; }
+  padding: 0.2em 0.2em; }
   .nav-link:focus, .nav-link:hover {
     text-decoration: none; }
   .nav-link.disabled {
@@ -2712,13 +2715,13 @@ tbody.collapse.show {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 1rem; }
+  padding: 0 0; }
 
 .navbar-brand {
   display: inline-block;
   padding-top: .25rem;
   padding-bottom: .25rem;
-  margin-right: 1rem;
+  margin-right: 0;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap; }
@@ -2762,11 +2765,11 @@ tbody.collapse.show {
 
 .navbar-toggler-left {
   position: absolute;
-  left: 1rem; }
+  left: 0; }
 
 .navbar-toggler-right {
   position: absolute;
-  right: 1rem; }
+  right: 0; }
 
 @media (max-width: 575px) {
   .navbar-toggleable .navbar-nav .dropdown-menu {
@@ -3744,7 +3747,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Vollkorn", Georgia, serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -3826,7 +3829,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Vollkorn", Georgia, serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
