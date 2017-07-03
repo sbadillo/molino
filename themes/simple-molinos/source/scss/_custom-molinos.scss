@@ -28,7 +28,7 @@ body,
 
 .index-thumb {
   background-size:cover;
-  border: 1px solid black;
+  // border: 1px solid black;
   height:100%;
 }
 
@@ -61,9 +61,6 @@ body,
 .sidebar {
   padding-left: 0;
   padding-right: 0;
-  
-  box-sizing: border-box;
-  border:5px solid red; 
 }
 
 .sidebar .nav-item {
