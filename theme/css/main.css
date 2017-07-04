@@ -107,9 +107,6 @@ footer {
   -moz-flex: 1;
   -o-flex: 1; }
 
-.row > [class*='col-'] {
-  flex-direction: column; }
-
 .index-thumb {
   border: 1px dashed red;
   height: 100%;
