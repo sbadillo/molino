@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section id="content">
+<section id="content">   <!-- This section dividers are not really needed. delete? -->
 
-  <div class="row no-gutters">
+  <div class="row main-row no-gutters">
 
     <!--1-->
     <div class="col-md-4 p-1 tall">
@@ -41,7 +41,7 @@
 
       <div class="flex-row p-1">
         <a href="#">
-          <div class="index-thumb debug2" style="background:url({{ SITEURL }}/images/identitevisuelle.jpg"></div>
+          <div class="index-thumb lazy debug2" data-background="{{ SITEURL }}/images/identitevisuelle.jpg"></div>
         </a>
       </div>
 
