@@ -96,9 +96,11 @@ footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  min-height: 100%; }
 
 .tall a {
+  min-height: 100%;
   height: 100%; }
 
 .flex-row {
