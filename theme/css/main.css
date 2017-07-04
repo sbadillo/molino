@@ -98,6 +98,9 @@ footer {
   display: flex;
   flex-wrap: wrap; }
 
+.tall a {
+  height: 100%; }
+
 .flex-row {
   flex: 1;
   -webkit-flex: 1;
