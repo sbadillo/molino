@@ -91,7 +91,8 @@ footer {
   height: 100%; }
 
 .main-row {
-  border: 1px dashed green; }
+  border: 1px dashed green;
+  overflow: hidden; }
 
 .flex-row {
   flex: 1;
