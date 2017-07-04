@@ -71,7 +71,8 @@ section#content {
   width: 100%; }
 
 .content-container {
-  padding-top: 5rem; }
+  padding-top: 5rem;
+  border: 1px dashed red; }
 
 @media (max-width: 767px) {
   .content-container {
