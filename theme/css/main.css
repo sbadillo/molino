@@ -92,7 +92,11 @@ footer {
 
 .main-row {
   border: 1px dashed green;
-  overflow: hidden; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap; }
 
 .flex-row {
   flex: 1;
